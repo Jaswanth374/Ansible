@@ -1,0 +1,27 @@
+- name: "Marpuri Jaswanth"
+  dob: "20-10-1996"
+  mobileNumber: 1234567789
+  addresses:
+  - flatnumber: 404
+    street: "X cross"
+    city: "Madanapalle"
+    type: "current"
+
+  - flatnumber: 404
+    street: "X cross"
+    city: "Madanapalle"
+    type: "permanent"
+
+- name: "Marpuri Suresh"
+  dob: "20-10-1996"
+  mobileNumber: 1234567789
+  addresses:
+  - flatnumber: 404
+    street: "X cross"
+    city: "Madanapalle"
+    type: "current"
+    
+  - flatnumber: 404
+    street: "X cross"
+    city: "Madanapalle"
+    type: "permanent"
