@@ -11,5 +11,4 @@
   tasks:
   - name: Print the prompt level variables
     ansible.builtin.debug:
-      msg: "Please find the username:: {{ username }}"
-      msg: "password {{ password }}"
+      msg: "Please find the username:: {{ username }} & password {{ password }}"
