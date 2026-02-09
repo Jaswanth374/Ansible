@@ -2,9 +2,9 @@
   hosts: Web
   become: yes
   tasks:
-    - name: Install nginx in web server
-      ansibile.bulitin.package:
-        name: nginx
-        state: present
+  - name: Install nginx in web server
+    ansibile.bulitin.package:
+      name: nginx
+      state: present
 
 
