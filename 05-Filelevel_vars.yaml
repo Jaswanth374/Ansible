@@ -1,6 +1,6 @@
 - name: File level variables
   hosts: local
-  vars_file:
+  vars_files:
     course.yaml
   tasks:
   - name: Print file level variables
