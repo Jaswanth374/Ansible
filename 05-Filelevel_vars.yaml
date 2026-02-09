@@ -1,0 +1,8 @@
+- name: File level variables
+  hosts: local
+  vars_file:
+    course.yaml
+  tasks:
+  - name: Print file level variables
+    ansible.builtin.debug:
+      msg: "Hi I have joined {{ COURSE }}"
