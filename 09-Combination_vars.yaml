@@ -6,6 +6,7 @@
   vars_files:
   - course.yaml
   vars_prompt:
+  - name: Name
     prompt: "I am a prompt level variable"
   tasks:
   - name: print the variables
