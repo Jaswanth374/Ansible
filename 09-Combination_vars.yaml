@@ -1,8 +1,8 @@
 - name: combination of variables
   hosts: local
   connection: local
-  vars:
-    value: "I am a play level variable"
+  # vars:
+  #   value: "I am a play level variable"
   # vars_files:
   # - course.yaml
   vars_prompt:
@@ -20,4 +20,5 @@
 #Arg level variable
 #task level varibale
 #file level variable
+#Play level variable
  
