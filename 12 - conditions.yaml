@@ -7,4 +7,4 @@
   - name: print the condition variable
     ansible.builtin.debug:
       msg: "course duration is completed more than {{ value }}hrs. Please join immediately"
-    when: value > 20
+    when: value > 10
