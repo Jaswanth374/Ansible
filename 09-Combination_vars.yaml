@@ -3,20 +3,21 @@
   connection: local
   vars:
     value: "I am a play level variable"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: Name
     prompt: "I am a prompt level variable"
   tasks:
   - name: print the variables
-    vars:
-     value: "I am a task level variable"
+    # vars:
+    #  value: "I am a task level variable"
     ansible.builtin.debug:
      msg: "{{ value }}"
 
 
 
-
+#Arg level variable
 #task level varibale
 #file level variable
+ 
