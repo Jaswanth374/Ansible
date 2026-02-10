@@ -9,7 +9,7 @@
     - Ansible
     - AWS
     IS_LIVE: true #bool
-    DETAILS:
+    DETAILS: #map or dictionary
       Months: 4
       Trainer: "Siva"
   tasks:
