@@ -10,7 +10,9 @@
       msg: "{{ command_output }}"
   
   - name: shell module
-    ansible.buitin.shell: cat /etc/passwd | grep root touch app.txt
+    ansible.buitin.shell: |
+      cat /etc/passwd | grep root 
+      touch app.txt
     register: shell_output
   - name: shell module output
     ansible.builtin.debug:
