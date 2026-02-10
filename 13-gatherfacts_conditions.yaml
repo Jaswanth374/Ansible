@@ -8,7 +8,7 @@
   - name: print redhat from facts
     ansible.builtin.debug:
       msg: "Hi, I am using redhat in ansible facts"
-    when: ansible_facts.os_family =="Redhat"
+    when: ansible_facts.os_family =="RedHat"
   
   - name: print ubuntu from facts
     ansible.builtin.debug:
