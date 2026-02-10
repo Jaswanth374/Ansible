@@ -13,4 +13,4 @@
   - name: print ubuntu from facts
     ansible.builtin.debug:
       msg: "Hi, I am using ubuntu in ansible facts"
-    when: ansible_facts.os_family =="ubuntu"
+    when: ansible_facts.os_family =="Debian"
