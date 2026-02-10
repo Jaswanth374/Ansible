@@ -10,7 +10,12 @@
     prompt: "I am a prompt level variable"
   tasks:
   - name: print the variables
-    vars:
-      value: "I am a task level variable"
+    # vars:
+    #   value: "I am a task level variable"
     ansible.builtin.debug:
      msg: "{{ value }}"
+
+
+
+
+#task level varibale
