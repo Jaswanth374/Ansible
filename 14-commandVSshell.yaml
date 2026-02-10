@@ -3,14 +3,14 @@
   connection: local
   tasks:
   - name: command module
-    ansible.buitin.command: ls -lrth
+    ansible.builtin.command: ls -lrth
     register: command_output
   - name: command module output
     ansible.builtin.debug:
       msg: "{{ command_output }}"
   
   - name: shell module
-    ansible.buitin.shell: |
+    ansible.builtin.shell: |
       cat /etc/passwd | grep root 
       touch app.txt
     register: shell_output
