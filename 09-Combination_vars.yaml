@@ -5,10 +5,10 @@
    value: "I am a play level variable"
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: value
-    prompt: please enter variable
-    private: false
+  # vars_prompt:
+  # - name: value
+  #   prompt: please enter variable
+  #   private: false
   tasks:
   - name: print the variables
     # vars:
@@ -21,6 +21,7 @@
 #Arg level variable
 #task level varibale
 #file level variable
+#prompt level variable
 #Play level variable
 #inventory level variable
 

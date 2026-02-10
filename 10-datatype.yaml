@@ -1,0 +1,23 @@
+- name: data types in ansible
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "DevOps with AWS" #String
+    DURATION: 140 #int
+    SUBJECT: #list - / []
+    - Linux
+    - Ansible
+    - AWS
+    IS_LIVE: true #bool
+    DETAILS:
+      Months: 4
+      Trainer: "Siva"
+  tasks:
+  - name: print the data types
+    ansible.builtin.debug:
+      msg: |
+        course: {{ COURSE }}
+        duration: {{ DURATION }}
+        subject: {{ SUBJECT }}
+        is live: {{ IS_LIVE }}
+        details: {{ DETAILS }}
