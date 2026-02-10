@@ -1,0 +1,21 @@
+- name: complex loop in ansible
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    apps: 
+    - name: mysql
+      service: start
+    - name: nginx
+      service: start
+  tasks:
+  - name: Install the package using loop
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: present
+    loop: "{{ apps }}"
+  - name: start the services using loop
+    ansible.builtin.service:
+      name: "{{ item.name }}"
+      service: "{{ item.service }}"
+    loop: "{{ apps }}"
