@@ -1,13 +1,13 @@
 - name: combination of variables
   hosts: local
   connection: local
-  # vars:
-  #  value: "I am a play level variable"
-  # # vars_files:
-  # # - course.yaml
+  vars:
+   value: "I am a play level variable"
+  vars_files:
+  - course.yaml
   vars_prompt:
   - name: Name
-    prompt: "I am a prompt level variable"
+    prompt: I am a prompt level variable
     private: false
   tasks:
   - name: print the variables
