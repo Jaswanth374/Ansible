@@ -1,2 +1,3 @@
 COURSE: "DevOps with AWS"
 DURATION: 140
+value: "I am file level variable"
