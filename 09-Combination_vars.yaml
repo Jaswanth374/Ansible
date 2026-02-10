@@ -8,6 +8,7 @@
   vars_prompt:
   - name: Name
     prompt: "I am a prompt level variable"
+    private: false
   tasks:
   - name: print the variables
     # vars:
